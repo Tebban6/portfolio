@@ -1,0 +1,126 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+ }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Contenedor del formulario */
+  form {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  /* Títulos y textos */
+  h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Estilo para etiquetas */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+    font-weight: bold;
+  }
+  
+  /* Campos de entrada */
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  /* Campos al enfocarse */
+  input:focus, select:focus {
+    border-color: #007bff; /* Borde azul al enfoque */
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5); /* Efecto de sombra */
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    resize: vertical; /* Permite redimensionar el campo verticalmente */
+  }
+  
+  textarea:focus {
+    border-color: #007bff; /* Resaltado azul al enfoque */
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  }
+  
+
+  /* Botón de enviar */
+  button {
+    width: 100%;
+    background-color: #007bff; /* Azul principal */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Botón al pasar el cursor */
+  button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+  }
+  
+  /* Ayuda para el formato */
+  small {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #888888;
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 500px) {
+    form {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  

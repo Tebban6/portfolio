@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <!-- Enlace hacia la página de inicio -->
+  <a href="../index.html"><i class="fa-solid fa-heart"></i></a>
+  <ul>
+      <li><a href="../index.html">Inicio</a></li>
+  <link rel="stylesheet" href="form.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulario de Registro</h1>
+  <form action="procesar_formulario.php" method="post">
+    <!-- Campo para el nombre -->
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+    <!-- Campo para el email -->
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+
+    <!-- Campo para el celular -->
+    <label for="celular">Número de celular:</label>
+    <input type="tel" id="celular" name="celular" placeholder="Escribe tu número de celular" pattern="[0-9]{10}" required>
+    <small>Formato: 10 dígitos, sin espacios ni guiones</small>
+
+    <!-- Campo de selección de país -->
+    <label for="pais">País:</label>
+    <select id="pais" name="pais" required>
+      <option value="">Selecciona tu país</option>
+      <option value="uruguay">Uruguay</option>
+      <option value="mexico">México</option>
+      <option value="argentina">Argentina</option>
+      <option value="espana">España</option>
+      <option value="colombia">Colombia</option>
+      <option value="chile">Chile</option>
+      <option value="otros">Otro</option>
+    </select>
+
+    <!-- Campo para comentarios -->
+    <label for="comentarios">Comentarios:</label>
+    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí"></textarea>
+
+    <!-- Botón para enviar -->
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
